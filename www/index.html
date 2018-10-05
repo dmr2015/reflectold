@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- CHIME
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>Folio</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+     <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+	<!-- settings popup -->
+    <div class="popup popup-settings color-red">
+    	<div>
+    		<p align="center">Settings
+		</div>
+		<div class="content-block">
+			<!--<div style="float:left; text-align:center">Settings</div>-->
+
+				<form id="settings" class = "list-block store-data">
+					<div class="list-block">
+					  <ul>
+						<li class="item-content">
+						  <div class="item-inner">
+							<div class="item-title eraseall"><a href="#">Erase All Content</a></div>
+						  </div>
+						</li>
+					  </ul>
+					</div>
+		
+				</form>
+				<div class='networktype'>
+					<p align="center"><a href="#">Show Connection Type</a>
+				</div>
+
+
+				<div>
+					<p align="center"><a href="#" class="close-popup">Done</a>
+				</div>
+		</div>
+	</div> 
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar bg-red theme-white color-white" >
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="left">
+                    <a href="#" class="link icon-only open-popup callsettings"><i class="icon icon-gear"></i></a>
+                    </div>
+                
+                    <div class="center sliding">Folio</div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-share"></i></a>
+                        <a href="#" class="makepdf">PDF</a><a href="#" class="makeemail">etest</a> -->    
+                        <a href="#" class="preview">Preview</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content color-blue">
+					<div class="list-block">
+						<ul>
+						  <a href="cover.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Cover sheet</div>
+								</div>
+							  </div></a>
+						  <a href="paperlist.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Papers</div>
+								</div>
+							  </div></a>                      										
+						  <a href="goal1.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Goal 1</div>
+								</div>
+							  </div></a>
+						  <a href="goal2.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Goal 2</div>
+								</div>
+							  </div></a>
+						  <a href="goal3.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Goal 3</div>
+								</div>
+							  </div></a>
+						  <a href="goal4.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Goal 4</div>
+								</div>
+							  </div></a>
+						  <a href="goal5.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Goal 5</div>
+								</div>
+							  </div></a>
+						  <a href="goal6.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Goal 6</div>
+								</div>
+							  </div></a>
+<!--						</ul>
+						<div class="content-block-title color-blue">BSEd Candidates</div>
+						<ul>
+-->						  <a href="goal7.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Goal 7 (BSED Only)</div>
+								</div>
+							  </div></a>
+						  <a href="goal8.html" class="item-link">
+							  <div class="item-content"> 
+								<div class="item-inner">
+								  <div class="item-title">Goal 8 (BSED Only)</div>
+								</div>
+							  </div></a>
+						</ul>
+					  </div>                      
+
+
+                    </div>
+                </div>
+            </div>
+
+		</div>
+	</div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>

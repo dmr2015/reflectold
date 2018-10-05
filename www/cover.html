@@ -1,0 +1,178 @@
+
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<!-- Top Navbar-->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left"><a href="#" class="back link"> <i class="icon icon-back"></i><span>Back</span></a></div>
+    <div class="center sliding">Cover Page</div>
+    <div class="right">
+      <!-- no right icon-->
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="cover" class="page">
+  
+    <!-- Scrollable page content-->
+    <div class="page-content hide-navbar-on-scroll">
+      <div class="content-block-title color-blue">Academic Information</div>
+      <form id="cover" class = "list-block store-data">
+        <ul>
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Name</div>
+                <div class="item-input">
+                  <input type="text" name="username" placeholder="Your name">
+                </div>
+              </div>              
+            </div>
+          </li>
+
+			<!-- msu id # -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">MSU ID</div>
+                <div class="item-input">
+                  <input type="text" name="msuid" placeholder="MSU ID Number">
+                </div>
+              </div>              
+            </div>
+          </li>
+
+			<!-- advisor -->
+				<li>
+				  <div class="item-content">
+					<div class="item-inner">
+						<div class="item-title label">Advisor</div>
+					  <div class="item-input">
+						<input type="text" name="pickadvisor" placeholder="Advisor" readonly id="pickadvisor">
+					  </div>
+					</div>
+				  </div>
+				</li>
+
+				<li>
+				  <div class="item-content">
+					<div class="item-inner">
+						<div class="item-title label">Graduation</div>
+					  <div class="item-input">
+						<input type="text" name="pickgradterm" placeholder="Term Year" readonly id="pickgradterm">
+					  </div>
+					</div>
+				  </div>
+				</li>
+
+			<!--ba or bse -->
+			
+				<li>
+				  <div class="item-content">
+					<div class="item-inner">
+						<div class="item-title label">Degree</div>
+					  <div class="item-input">
+						<input type="text" name="pickdegree" placeholder="BA or BSED" readonly id="pickdegree">
+					  </div>
+					</div>
+				  </div>
+				</li>
+
+
+
+
+			<!--minor(s) -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Minor(s)</div>
+                <div class="item-input">
+                  <input type="text" name="minors" placeholder="List your minor">
+                </div>
+              </div>              
+            </div>
+          </li>
+
+			<!--concentrations / support areas -->
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Concentrations</div>
+                <div class="item-input">
+                  <input type="text" name="concentrations" placeholder="Concentrations or BSEd support areas">
+                </div>
+              </div>              
+            </div>
+          </li>
+
+
+        </ul>
+      
+ 		<div class="content-block-title color-blue">Contact Information</div>
+      	<ul>
+      	  <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-input">
+                  <input type="text" name="email" placeholder="Email after graduation">
+                </div>
+              </div>              
+            </div>
+          </li>
+      	
+      	  <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-input">
+                  <input type="text" name="localaddress" placeholder="Local address">
+                </div>
+              </div>              
+            </div>
+          </li>
+    
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-input">
+                  <input type="text" name="cellphone" placeholder="Mobile number">
+                </div>
+              </div>              
+            </div>
+          </li>
+      	
+		<li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-input">
+                  <input type="text" name="otherphone" placeholder="Alt number">
+                </div>
+              </div>              
+            </div>
+          </li>
+      	      
+      	  <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-input">
+                  <input type="text" name="permanentaddress" placeholder="Long term address">
+                </div>
+              </div>              
+            </div>
+          </li>      
+      
+          	</ul>  
+      
+    </form>
+    
+    
+<!--
+      <div class="content-block">
+        <div class="row">
+          <div class="col-50"><a href="#" class="button button-big button-fill color-red">Cancel</a></div>
+          <div class="col-50">
+            <input type="submit" value="Submit" class="button button-big button-fill color-green"/>
+          </div>
+        </div>
+      </div>-->
+  
+</div>
